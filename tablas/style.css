@@ -1,0 +1,42 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img {
+    width: 400px;
+    height: 200px;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #666;
+    color: white;
+}
+
+td, th {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+tfoot {
+    background-color: rgb(181, 181, 181);
+}
+
+h1 {
+    color: #333;
+    font-size: 20px;
+}
+
+h2 {
+    color: #666;
+    font-size: 15px;
+}
+
+caption {
+    font-size: 16px;
+}
+

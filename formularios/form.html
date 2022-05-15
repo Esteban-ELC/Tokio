@@ -1,0 +1,72 @@
+<!doctype html>  
+<html>  
+<head>  
+   <meta charset="utf-8">  
+   <title>Mi página web</title>  
+</head>  
+<body>  
+   <p>Rellene este formulario:</p>  
+   <form method="post" action="mi-script.php"  
+enctype="application/x-www-form-urlencoded" name="inscripcion">  
+       <fieldset>  
+           <legend>Su estado civil: </legend>  
+           <input type="radio" name="estado_civil"  
+value="señora">Señora<br>  
+           <input type="radio" name="estado_civil"  
+value="señorita">Señorita<br>  
+           <input type="radio" name="estado_civil"  
+value="señor">Señor  
+       </fieldset>  
+       <p>  
+           <label for="nombre">Su nombre: </label>  
+           <input type="text" id="nombre" name="nombre">  
+       </p>  
+       <p>  
+           <label for="nombre">Su apellido: </label>  
+           <input type="text" id="apellido" name="apellido">  
+       </p>  
+       <p>  
+           <label for="age">Su edad: </label>  
+           <input type="number" id="edad" name="edad">  
+       </p>  
+       <p>  
+           <label for="age">Su dirección de correo: </label>  
+           <input type="email" id="email" name="email">  
+       </p>  
+       <p>  
+           <label for="date">Indique su fecha de nacimiento:  
+</label>  
+           <input type="date" id="fecha" name="fecha">  
+       </p>  
+       <p>  
+           <label for="deporte">Seleccione su deporte:</label>  
+           <select id="deporte">  
+               <option value="lista">Lista de deportes</option>  
+               <option value="tenis">Tenis</option>  
+               <option value="futbol">Fútbol</option>  
+               <option value="balonMano">Balónmano</option>  
+               <option value="patinaje">Patinaje</option>  
+               <option value="arc">Tiro con arco </option>  
+               <option value="atletismo">Atletismo</option>  
+               <option value="natacion">Natación</option>  
+           </select>  
+           </p>  
+       <fieldset>  
+           <legend>Seleccione una o varias opciones:</legend>  
+           <input type="checkbox" name="competicion"  
+value="competicion">Competición<br>  
+           <input type="checkbox" name="ocio" value="ocio"  
+checked>Ocio<br>  
+           <input type="checkbox" name="Acompañante"  
+value="acompañante"> Acompañante <br>  
+           <input type="checkbox" name="Entrenador"  
+value="entrenador">Entrenador 
+       </fieldset>  
+       <p>  
+           <input type="submit" name="Enviar" value="Enviar" />  
+           &nbsp;  
+           <input type="reset" name="Cancelar" value="Cancelar" />  
+       </p>  
+   </form>  
+</body>  
+</html>

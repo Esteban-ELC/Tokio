@@ -1,0 +1,26 @@
+<!DOCTYPE HTML> 
+<html> 
+<head> 
+   <meta charset="utf-8"> 
+   <title>Cuadro de diálogo</title> 
+</head> 
+<body> 
+   <h3>Mostrar y cerrar el cuadro de diálogo</h3> 
+   <button id="abrir">Abrir</button> 
+   <button id="cerrar">Cerrar</button> 
+   <dialog id="cuadro_dialogo"> 
+       <h2>Título del cuadro de diálogo</h2> 
+       <p>Integer posuere erat a ante venenatis...</p> 
+   </dialog> 
+   <p>Donec ullamcorper nulla no metus auctor fringilla...</p> 
+   <script> 
+       var cuadroDialogo = document.getElementById("cuadro_dialogo"); 
+       document.getElementById("abrir").addEventListener("click", () => { 
+           cuadroDialogo.show(); 
+       }); 
+       document.getElementById("cerrar").addEventListener("click", () => { 
+           cuadroDialogo.close(); 
+       }); 
+   </script> 
+</body> 
+</html>
