@@ -1,72 +1,83 @@
-<!doctype html>  
-<html>  
-<head>  
-   <meta charset="utf-8">  
-   <title>Mi página web</title>  
-</head>  
-<body>  
-   <p>Rellene este formulario:</p>  
-   <form method="post" action="mi-script.php"  
-enctype="application/x-www-form-urlencoded" name="inscripcion">  
-       <fieldset>  
-           <legend>Su estado civil: </legend>  
-           <input type="radio" name="estado_civil"  
-value="señora">Señora<br>  
-           <input type="radio" name="estado_civil"  
-value="señorita">Señorita<br>  
-           <input type="radio" name="estado_civil"  
-value="señor">Señor  
-       </fieldset>  
-       <p>  
-           <label for="nombre">Su nombre: </label>  
-           <input type="text" id="nombre" name="nombre">  
-       </p>  
-       <p>  
-           <label for="nombre">Su apellido: </label>  
-           <input type="text" id="apellido" name="apellido">  
-       </p>  
-       <p>  
-           <label for="age">Su edad: </label>  
-           <input type="number" id="edad" name="edad">  
-       </p>  
-       <p>  
-           <label for="age">Su dirección de correo: </label>  
-           <input type="email" id="email" name="email">  
-       </p>  
-       <p>  
-           <label for="date">Indique su fecha de nacimiento:  
-</label>  
-           <input type="date" id="fecha" name="fecha">  
-       </p>  
-       <p>  
-           <label for="deporte">Seleccione su deporte:</label>  
-           <select id="deporte">  
-               <option value="lista">Lista de deportes</option>  
-               <option value="tenis">Tenis</option>  
-               <option value="futbol">Fútbol</option>  
-               <option value="balonMano">Balónmano</option>  
-               <option value="patinaje">Patinaje</option>  
-               <option value="arc">Tiro con arco </option>  
-               <option value="atletismo">Atletismo</option>  
-               <option value="natacion">Natación</option>  
-           </select>  
-           </p>  
-       <fieldset>  
-           <legend>Seleccione una o varias opciones:</legend>  
-           <input type="checkbox" name="competicion"  
-value="competicion">Competición<br>  
-           <input type="checkbox" name="ocio" value="ocio"  
-checked>Ocio<br>  
-           <input type="checkbox" name="Acompañante"  
-value="acompañante"> Acompañante <br>  
-           <input type="checkbox" name="Entrenador"  
-value="entrenador">Entrenador 
-       </fieldset>  
-       <p>  
-           <input type="submit" name="Enviar" value="Enviar" />  
-           &nbsp;  
-           <input type="reset" name="Cancelar" value="Cancelar" />  
-       </p>  
-   </form>  
-</body>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get" class="form">
+        <h2 class="form_title">Registrate</h2>
+        <p class="form_paragraph">Ya tienes cuenta, ingresa <a href="#" class="form_link">Aqui</a></p>
+        <div class="form_container">
+            <div class="form_group">
+                <input type="text" name="" id="name" class="form_input" placeholder=" " autofocus="autofocus">
+                <label for="name" class="form_lable">Nombre:</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="email" name="" id="email" class="form_input" placeholder=" ">
+                <label for="email" class="form_lable">Correo electronico:</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="url" name="" id="url" class="form_input" placeholder=" ">
+                <label for="url" class="form_lable">URL personal:</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="tel" name="" id="tel" class="form_input" placeholder=" ">
+                <label for="tel" class="form_lable">Numero de telefono:</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="number" name="" id="number" class="form_input" placeholder=" " min="-10" max="10">
+                <label for="number" class="form_lable">Numero del -10 al 10</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="color" name="" id="color" class="form_input" placeholder=" ">
+                <label for="color" class="form_lable">Color favorito</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="date" name="" id="date" class="form_input" placeholder=" ">
+                <label for="date" class="form_lable">Fecha</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="time" name="" id="time" class="form_input" placeholder=" ">
+                <label for="time" class="form_lable">Hora</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="month" name="" id="month" class="form_input" placeholder=" ">
+                <label for="month" class="form_lable">Mes</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="date" name="" id="date" class="form_input" placeholder=" ">
+                <label for="date" class="form_lable">Fecha</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="week" name="" id="week" class="form_input" placeholder=" ">
+                <label for="week" class="form_lable">Semana</label>
+                <span class="form_line"></span>
+            </div>
+            <div class="form_group">
+                <input type="datetime-local" name="" id="datetime" class="form_input" placeholder=" ">
+                <label for="datetime" class="form_lable">Fecha y Hora</label>
+                <span class="form_line"></span>
+            </div>
+            <input type="submit" class="form_submit" value="Registrarme">
+        </div>
+
+
+
+
+    </form>
+</body>
 </html>
