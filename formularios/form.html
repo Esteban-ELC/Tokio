@@ -13,71 +13,71 @@
         <p class="form_paragraph">Ya tienes cuenta, ingresa <a href="#" class="form_link">Aqui</a></p>
         <div class="form_container">
             <div class="form_group">
-                <input type="text" name="" id="name" class="form_input" placeholder=" " autofocus="autofocus">
-                <label for="name" class="form_lable">Nombre:</label>
-                <span class="form_line"></span>
+                <fieldset>
+                    <legend>Genero</legend>
+                    <input type="radio" name="genero" id="genero" >
+                    <label for="genero" >Masculino</label><br>
+                    <input type="radio" name="genero" id="genero">
+                    <label for="genero">Femenino</label>
+                </fieldset> 
             </div>
             <div class="form_group">
-                <input type="email" name="" id="email" class="form_input" placeholder=" ">
-                <label for="email" class="form_lable">Correo electronico:</label>
-                <span class="form_line"></span>
+                <fieldset>
+                    <legend>Nombre y Apellido</legend>
+                    <input type="text" name="name" id="name" class="form_input">
+                    <label for="name" >Nombre</label>
+                    <input type="text" name="apellido" id="apellido" class="form_input">
+                    <label for="apellido" >Apellido</label>
+                </fieldset> 
             </div>
             <div class="form_group">
-                <input type="url" name="" id="url" class="form_input" placeholder=" ">
-                <label for="url" class="form_lable">URL personal:</label>
-                <span class="form_line"></span>
+                <fieldset>
+                    <legend>Edad</legend>
+                    <input type="range" value="24" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+                    <output>24</output>
+                    <!-- Ayuda de Stack overflow para mostrar el numero-->
+                </fieldset>
             </div>
             <div class="form_group">
-                <input type="tel" name="" id="tel" class="form_input" placeholder=" ">
-                <label for="tel" class="form_lable">Numero de telefono:</label>
-                <span class="form_line"></span>
+                <fieldset>
+                    <legend>Email</legend>
+                    <input type="email" name="email" id="email" class="form_input">
+                    <label for="email">Email</label>
+                </fieldset>
             </div>
             <div class="form_group">
-                <input type="number" name="" id="number" class="form_input" placeholder=" " min="-10" max="10">
-                <label for="number" class="form_lable">Numero del -10 al 10</label>
-                <span class="form_line"></span>
+                <fieldset>
+                    <legend>Fecha Nacimiento</legend>
+                    <input type="date" name="birth" id="birth" class="form_input">
+                    <label for="date">Fecha de Nacimiento</label>
+                </fieldset>
             </div>
             <div class="form_group">
-                <input type="color" name="" id="color" class="form_input" placeholder=" ">
-                <label for="color" class="form_lable">Color favorito</label>
-                <span class="form_line"></span>
+                <fieldset>
+                    <legend>Bebida favorita</legend>
+                    <select name="bebida" id="bebida" class="form_input">
+                        <option value="NaN">Selecciona</option>
+                        <option value="Cerveza">Cerveza</option>
+                        <option value="Gaseosa">Gaseosa</option>
+                        <option value="Vino">Vino</option>
+                        <option value="Agua">Agua</option>
+                    </select>
+                </fieldset>
             </div>
             <div class="form_group">
-                <input type="date" name="" id="date" class="form_input" placeholder=" ">
-                <label for="date" class="form_lable">Fecha</label>
-                <span class="form_line"></span>
-            </div>
-            <div class="form_group">
-                <input type="time" name="" id="time" class="form_input" placeholder=" ">
-                <label for="time" class="form_lable">Hora</label>
-                <span class="form_line"></span>
-            </div>
-            <div class="form_group">
-                <input type="month" name="" id="month" class="form_input" placeholder=" ">
-                <label for="month" class="form_lable">Mes</label>
-                <span class="form_line"></span>
-            </div>
-            <div class="form_group">
-                <input type="date" name="" id="date" class="form_input" placeholder=" ">
-                <label for="date" class="form_lable">Fecha</label>
-                <span class="form_line"></span>
-            </div>
-            <div class="form_group">
-                <input type="week" name="" id="week" class="form_input" placeholder=" ">
-                <label for="week" class="form_lable">Semana</label>
-                <span class="form_line"></span>
-            </div>
-            <div class="form_group">
-                <input type="datetime-local" name="" id="datetime" class="form_input" placeholder=" ">
-                <label for="datetime" class="form_lable">Fecha y Hora</label>
-                <span class="form_line"></span>
+                <fieldset>
+                    <legend>Lugar para beber</legend>
+                    <input type="checkbox" id="lugar" name="lugar">
+                    <label for="lugar">Hogar</label><br>
+                    <input type="checkbox" id="lugar" name="lugar">
+                    <label for="lugar">Restaurante</label><br>
+                    <input type="checkbox" id="lugar" name="lugar">
+                    <label for="lugar">Fiestas</label>
+                </fieldset>
             </div>
             <input type="submit" class="form_submit" value="Registrarme">
+            <input type="reset" class="form_submit" value="Cancelar">
         </div>
-
-
-
-
     </form>
 </body>
 </html>

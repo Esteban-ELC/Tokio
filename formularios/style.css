@@ -5,14 +5,12 @@
 }
 
 body{
-    background-color: #ffffff;
-    background-color: #e5e5f7;
-    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
-    background-size: 20px 20px;
-    background-position: 0 0,10px 10px;
+    background: linear-gradient(135deg, #45983c55 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(225deg, #45983c 25%, transparent 25%) -10px 0/ 20px 20px, linear-gradient(315deg, #45983c55 25%, transparent 25%) 0px 0/ 20px 20px, linear-gradient(45deg, #45983c 25%, #e5e5f7 25%) 0px 0/ 20px 20px;
     display: flex;
     min-height: 100vh;
 }
+
+
 
 .form{
     background-color: white;
@@ -25,12 +23,14 @@ body{
 }
 
 .form_title{
+    padding-bottom: .8em;
     font-weight: 300;
+    color: rgb(84, 139, 64);
 }
 
 .form_link{
     font-weight: 400;
-    color: black;
+    color: rgb(84, 139, 64);
 }
 
 .form_container{
@@ -40,9 +40,11 @@ body{
 }
 
 .form_group{
+    border: rgb(84, 139, 64);
     position: relative;
     --color: #5757577e;
 }
+
 
 .form_input{
     width: 100%;
@@ -55,48 +57,24 @@ body{
     border-bottom: 1px solid var(--color);
 }
 
-.form_input:not(:placeholder-shown){
-    color: #4d4646;
+fieldset{
+    border: 2px rgb(84, 139, 64) solid;
+    padding: 2em;
+
 }
 
-.form_input:focus + .form_lable, .form_input:not(:placeholder-shown) + .form_lable{
-    transform: translateY(-12px) scale(.7);
-    transform-origin: left top;
-    color: #3866f2;
-}
-
-.form_lable{
-    color: var(--color);
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 5px;
-    transform: translateY(10px);
-    transition: transform .5s, color .3s;
+legend{
+    color: rgb(84, 139, 64);
+    font-weight: 300;
+    font-size: 1.4em;
 }
 
 .form_submit{
-    background: #3866f2;
+    background: rgb(84, 139, 64);
     color: white;
     font-size: 1rem;
     font-weight: 300;
     padding: .8em 0;
     border: none;
     border-radius: .5em;
-}
-
-.form_line{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #3866f2;
-    transform: scale(0);
-    transform: left bottom;
-    transition: transform .4s;
-}
-
-.form_input:focus ~ .form_line, .form_input:not(:placeholder-shown) ~ .form_line{
-    transform: scale(1);
 }
