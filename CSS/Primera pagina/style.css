@@ -1,26 +1,21 @@
 body{
-    display: flex;
     margin: 0;
 }
 
-img {
+#tokio {
     height: 60px;
-    margin: 0.8em;
+    margin: 0 auto;
 }
 
-header h1{
-    color: #333fff;
-    font-size: 16pt;
-    font-size: bold;
-    float: right;
-    padding: 16px;
-}
-
-header nav {
-    width: 100%;
+header {
     background-color: black;
-    padding: 3rem;
-    position: absolute;
+    color: #333fff;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 16pt;
+    font-weight: bold;
 }
 
 header a {
