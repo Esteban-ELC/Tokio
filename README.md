@@ -5,3 +5,6 @@ updates of every new thing I learn
 
 My goal is to become a Front End Developer
 (15/May/2022)
+
+First page of vary simple webpage
+(23/May/2022)
